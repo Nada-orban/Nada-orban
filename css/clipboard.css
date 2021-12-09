@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:hsl(171, 66%, 44%);
+    --primary-color:hsl(233, 100%, 69%);
+    --neutral-color: hsl(210, 10%, 33%);
+    --grayish-color: hsl(201, 11%, 66%);
+    --section-padding:100px;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 18px;
+    font-family: "Bai Jamjuree",sans-serif;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+
+}
+@media (min-width: 375px) {
+    .container {
+      width: 360px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}  
+
+  /* Large */
+@media (min-width: 1440px) {
+    .container {
+      width: 1410px;
+    }
+}
+
+.main-head{
+    text-align: center;
+    
+
+
+}
+.main-head p{
+    text-align: center;
+    line-height: 1.5;
+    color: var(--grayish-color);
+    width: 570px;
+    max-width: 100%;
+    margin: 0  auto 100px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+header .main-head h2{
+    font-size: 33px;
+}
+.main-head h2{
+    color: var(--neutral-color);
+    font-size: 28px;
+    
+}
+header{
+    background-image: url(../images/bg-header-desktop.png);
+    background-size: cover;
+}
+@media (max-width:375px){
+    header{
+        background-size: cover;
+        background-image:url(../images/bg-header-mobile.png);
+        
+    }
+    
+    
+   
+
+}
+@media (max-width:375px){
+    .choose{
+        display: grid;
+        gap: 20px;
+        
+
+    }
+    header input{
+        
+        height: 50px;
+        
+    }
+
+}
+
+
+header{
+    position: relative;
+    text-align: center;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+     
+}
+ input{
+    border-radius: 20px;
+    padding: 12px;
+    border-style: none;
+    color: white;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+input[type="button"]{
+    background-color: var(--main-color);
+    margin-right: 5px;
+    
+}
+input[type="submit"]{
+    background-color:var(--primary-color);
+}
+.snippets{
+    padding-top: var(--section-padding);
+    padding-bottom: 100px;
+}
+
+.snippets .content{
+    margin-top: 70px;
+    /*display: flex;*/
+    text-align: center;
+    position: relative;
+    
+
+}
+.snippets .content img{
+    width: 300px;
+    
+}
+.snippets .content .options{
+    margin: 50px;
+}
+.snippets .content .options .box {
+    margin-bottom: 40px;
+}
+.snippets .content .options .box h3{
+    color: var(--neutral-color);
+    margin-bottom:15px ;
+}
+.snippets .content .options .box p{
+    color: var(--grayish-color);
+    font-size: 15px;
+    line-height: 1.5;
+}
+@media (min-width:992px) {
+    .snippets{
+        padding-bottom: 450px;
+    }
+    .snippets .content{
+        display: flex;
+        text-align: start;
+        
+    }
+    .snippets .content img{
+        
+        position: absolute;
+        left: -50px;
+        width: 55%;
+    }
+    .snippets .content .options{
+        position: absolute;
+        right: 0px;
+        width: 350px;
+        
+    }
+
+
+}
+.access{
+    padding-top: 50px;
+    
+    text-align: center;
+}
+.access img{
+    width: 80%;
+    margin-top: 20px;
+}
+@media (max-width:375px){
+    .access img{
+        width: 100%;
+    }
+}
+.superchage{
+    padding-bottom:50px;
+    padding-top: 50px;
+
+}
+.superchage .tool{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    text-align: center;
+    margin-top: 40px;
+    justify-content: center;
+    
+}
+.superchage .tool .box{
+   
+    text-align: center;
+   margin: 18px;
+   flex-basis: 28%;
+    
+}
+.superchage .tool img{
+    width: 30px;
+    
+}
+.superchage .tool .box h3{
+    color: var(--neutral-color);
+    /*font-size: 15px;*/
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.superchage .tool .box p{
+    color: var(--grayish-color);
+    font-size: 15px;
+    line-height: 1.5;
+}
+@media (max-width:375px){
+    .superchage .tool{
+        display: grid;
+    }
+    
+}
+.companies{
+    padding-bottom: var(--section-padding);
+    text-align: center;
+
+    
+}
+.companies img{
+    margin: 30px;
+    
+    width: 110px;
+}
+.clipboard{
+    text-align: center;
+    padding-bottom: 150px;
+}
+.footer{
+    padding-top:20px ;
+    padding-bottom: 10px;
+    background-color:hsl(180, 14%, 95%);
+    
+}
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+.footer ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 60px;
+    margin-right: 180px;
+    
+   
+}
+.footer ul li{
+    
+    font-size: 15px;
+    color:var(--neutral-color);
+    margin: 0  30px  ;
+    margin-bottom: 15px;
+    
+    
+}
+.footer img{
+    width: 35px;
+    height: 35px;
+    max-width: 100%;
+    
+    
+}
+
+.footer .icon img{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    max-width: 100%;
+    
+}
+@media (max-width:375px){
+    
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /*flex-basis: 100%;*/
+        margin:30px ;
+       
+        
+        
+    }
+    .footer ul li{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .footer .icon img{
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+    }
+    .footer img{
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
